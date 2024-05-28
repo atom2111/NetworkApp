@@ -1,0 +1,14 @@
+C:\Users\atowc\Desktop\files\courses\network_app\ConsoleApp1\bin\Debug\net8.0\Network.exe
+C:\Users\atowc\Desktop\files\courses\network_app\ConsoleApp1\bin\Debug\net8.0\Network.deps.json
+C:\Users\atowc\Desktop\files\courses\network_app\ConsoleApp1\bin\Debug\net8.0\Network.runtimeconfig.json
+C:\Users\atowc\Desktop\files\courses\network_app\ConsoleApp1\bin\Debug\net8.0\Network.dll
+C:\Users\atowc\Desktop\files\courses\network_app\ConsoleApp1\bin\Debug\net8.0\Network.pdb
+C:\Users\atowc\Desktop\files\courses\network_app\ConsoleApp1\obj\Debug\net8.0\Network.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\atowc\Desktop\files\courses\network_app\ConsoleApp1\obj\Debug\net8.0\Network.AssemblyInfoInputs.cache
+C:\Users\atowc\Desktop\files\courses\network_app\ConsoleApp1\obj\Debug\net8.0\Network.AssemblyInfo.cs
+C:\Users\atowc\Desktop\files\courses\network_app\ConsoleApp1\obj\Debug\net8.0\Network.csproj.CoreCompileInputs.cache
+C:\Users\atowc\Desktop\files\courses\network_app\ConsoleApp1\obj\Debug\net8.0\Network.dll
+C:\Users\atowc\Desktop\files\courses\network_app\ConsoleApp1\obj\Debug\net8.0\refint\Network.dll
+C:\Users\atowc\Desktop\files\courses\network_app\ConsoleApp1\obj\Debug\net8.0\Network.pdb
+C:\Users\atowc\Desktop\files\courses\network_app\ConsoleApp1\obj\Debug\net8.0\Network.genruntimeconfig.cache
+C:\Users\atowc\Desktop\files\courses\network_app\ConsoleApp1\obj\Debug\net8.0\ref\Network.dll
