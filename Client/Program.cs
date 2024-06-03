@@ -23,10 +23,16 @@ namespace Client
                 do
                 {
                     Console.Clear();
-                    Console.WriteLine("Введите сообщение");
+                    Console.WriteLine("Введите сообщение (или 'Exit' для выхода):");
                     messageText = Console.ReadLine();
                 }
                 while (string.IsNullOrEmpty(messageText));
+
+                if (messageText.ToLower() == "exit")
+                {
+                    break; // Завершаем цикл и программу
+                }
+
                 Message message = new Message()
                 {
                     Text = messageText,
@@ -48,7 +54,9 @@ namespace Client
                     Console.WriteLine("Сообщение доставлено.");
                 }
             }
-        }
 
+            udpClient.Close();
+            Console.WriteLine("Клиент завершил работу.");
+        }
     }
 }

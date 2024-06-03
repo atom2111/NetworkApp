@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Network
-build_property.ProjectDir = C:\Users\atowc\Desktop\Network\NetworkApp\ConsoleApp1\
+build_property.ProjectDir = C:\git\NetworkApp\ConsoleApp1\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\atowc\\Desktop\\Network\\NetworkApp\\Client\\Client.csproj": {}
+    "C:\\git\\NetworkApp\\Client\\Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\atowc\\Desktop\\Network\\NetworkApp\\Client\\Client.csproj": {
+    "C:\\git\\NetworkApp\\Client\\Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\atowc\\Desktop\\Network\\NetworkApp\\Client\\Client.csproj",
+        "projectUniqueName": "C:\\git\\NetworkApp\\Client\\Client.csproj",
         "projectName": "Client",
-        "projectPath": "C:\\Users\\atowc\\Desktop\\Network\\NetworkApp\\Client\\Client.csproj",
+        "projectPath": "C:\\git\\NetworkApp\\Client\\Client.csproj",
         "packagesPath": "C:\\Users\\atowc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\atowc\\Desktop\\Network\\NetworkApp\\Client\\obj\\",
+        "outputPath": "C:\\git\\NetworkApp\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\atowc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\atowc\\Desktop\\Network\\NetworkApp\\ConsoleApp1\\Network.csproj": {
-                "projectPath": "C:\\Users\\atowc\\Desktop\\Network\\NetworkApp\\ConsoleApp1\\Network.csproj"
+              "C:\\git\\NetworkApp\\ConsoleApp1\\Network.csproj": {
+                "projectPath": "C:\\git\\NetworkApp\\ConsoleApp1\\Network.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\atowc\\Desktop\\Network\\NetworkApp\\ConsoleApp1\\Network.csproj": {
+    "C:\\git\\NetworkApp\\ConsoleApp1\\Network.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\atowc\\Desktop\\Network\\NetworkApp\\ConsoleApp1\\Network.csproj",
+        "projectUniqueName": "C:\\git\\NetworkApp\\ConsoleApp1\\Network.csproj",
         "projectName": "Network",
-        "projectPath": "C:\\Users\\atowc\\Desktop\\Network\\NetworkApp\\ConsoleApp1\\Network.csproj",
+        "projectPath": "C:\\git\\NetworkApp\\ConsoleApp1\\Network.csproj",
         "packagesPath": "C:\\Users\\atowc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\atowc\\Desktop\\Network\\NetworkApp\\ConsoleApp1\\obj\\",
+        "outputPath": "C:\\git\\NetworkApp\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\atowc\\AppData\\Roaming\\NuGet\\NuGet.Config",

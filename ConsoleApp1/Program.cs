@@ -8,7 +8,7 @@ namespace Network
     {
         static void Main(string[] args)
         {
-            Server("Hello");
+            Server();
         }
 
         public void task1()
@@ -25,27 +25,42 @@ namespace Network
             Message? msgDeserialize = Message.DeserializeFromJson(json);
         }
 
-        public static void Server(string name)
+        public static void Server()
         {
             UdpClient udpClient = new UdpClient(12345);
             IPEndPoint iPEndPoint = new IPEndPoint(IPAddress.Any, 0);
             Console.WriteLine("Сервер ждёт сообщение от клиента");
 
-            while (true)
+            // Асинхронный вызов для ожидания нажатия клавиши
+            Task.Run(() =>
             {
-                byte[] buffer = udpClient.Receive(ref iPEndPoint);
+                Console.WriteLine("Нажмите любую клавишу для завершения работы сервера...");
+                Console.ReadKey();
+                udpClient.Close();
+            });
 
-                if (buffer == null) break;
-                var messageText = Encoding.UTF8.GetString(buffer);
+            try
+            {
+                while (true)
+                {
+                    byte[] buffer = udpClient.Receive(ref iPEndPoint);
 
-                Message message = Message.DeserializeFromJson(messageText);
-                message.Print();
+                    if (buffer == null || buffer.Length == 0) break;
+                    var messageText = Encoding.UTF8.GetString(buffer);
 
-                // Отправка подтверждения клиенту
-                byte[] confirmationBytes = Encoding.UTF8.GetBytes("ACK");
-                udpClient.Send(confirmationBytes, confirmationBytes.Length, iPEndPoint);
+                    Message message = Message.DeserializeFromJson(messageText);
+                    message.Print();
+
+                    // Отправка подтверждения клиенту
+                    byte[] confirmationBytes = Encoding.UTF8.GetBytes("ACK");
+                    udpClient.Send(confirmationBytes, confirmationBytes.Length, iPEndPoint);
+                }
+            }
+            catch (ObjectDisposedException)
+            {
+                // Это исключение возникает, когда udpClient закрывается из-за нажатия клавиши
+                Console.WriteLine("Сервер завершил работу.");
             }
         }
-
     }
 }
