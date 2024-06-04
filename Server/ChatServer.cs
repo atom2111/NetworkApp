@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
@@ -15,6 +16,7 @@ namespace Server
 
         private UdpClient udpClient;
         private CancellationTokenSource cts;
+        private List<Message> messages = new List<Message>();
 
         private ChatServer() { }
 
@@ -50,11 +52,19 @@ namespace Server
                         var messageText = Encoding.UTF8.GetString(buffer);
 
                         Message message = Message.DeserializeFromJson(messageText);
-                        message.Print();
+                        if (message.Type == MessageType.List)
+                        {
+                            SendUnreadMessages(iPEndPoint);
+                        }
+                        else
+                        {
+                            messages.Add(message);
+                            message.Print();
 
-                        // Отправка подтверждения клиенту
-                        byte[] confirmationBytes = Encoding.UTF8.GetBytes("ACK");
-                        await udpClient.SendAsync(confirmationBytes, confirmationBytes.Length, iPEndPoint);
+                            // Отправка подтверждения клиенту
+                            byte[] confirmationBytes = Encoding.UTF8.GetBytes("ACK");
+                            await udpClient.SendAsync(confirmationBytes, confirmationBytes.Length, iPEndPoint);
+                        }
                     }
                 }
             }
@@ -62,6 +72,17 @@ namespace Server
             {
                 // Исключение выбрасывается при закрытии udpClient
             }
+        }
+
+        private async void SendUnreadMessages(IPEndPoint clientEndPoint)
+        {
+            foreach (var message in messages)
+            {
+                string json = message.SerializeMessageToJson();
+                byte[] data = Encoding.UTF8.GetBytes(json);
+                await udpClient.SendAsync(data, data.Length, clientEndPoint);
+            }
+            messages.Clear();
         }
     }
 }
