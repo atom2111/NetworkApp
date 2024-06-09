@@ -1,0 +1,7 @@
+C:\git\NetworkApp\ClientTests\bin\Debug\net8.0\CoverletSourceRootsMapping_ClientTests
+C:\git\NetworkApp\ClientTests\obj\Debug\net8.0\ClientTests.csproj.AssemblyReference.cache
+C:\git\NetworkApp\ClientTests\obj\Debug\net8.0\ClientTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\NetworkApp\ClientTests\obj\Debug\net8.0\ClientTests.AssemblyInfoInputs.cache
+C:\git\NetworkApp\ClientTests\obj\Debug\net8.0\ClientTests.AssemblyInfo.cs
+C:\git\NetworkApp\ClientTests\obj\Debug\net8.0\ClientTests.csproj.CoreCompileInputs.cache
+C:\git\NetworkApp\ClientTests\obj\Debug\net8.0\ClientTests.sourcelink.json

@@ -29,7 +29,7 @@ namespace Network
 
         public void Print()
         {
-            Console.WriteLine($"[{DateTime}] {NicknameFrom} -> {NicknameTo}: {Text}");
+            Console.WriteLine($"[{DateTime}] {NicknameFrom} to {NicknameTo}: {Text}");
         }
     }
 }

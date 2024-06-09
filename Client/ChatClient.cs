@@ -2,6 +2,7 @@ using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading;
 using Network;
 
 namespace Client
@@ -10,20 +11,22 @@ namespace Client
     {
         private UdpClient udpClient;
         private IPEndPoint serverEndPoint;
+        private CancellationTokenSource cts;
 
         public ChatClient(string serverIp, int serverPort)
         {
             udpClient = new UdpClient();
             serverEndPoint = new IPEndPoint(IPAddress.Parse(serverIp), serverPort);
+            cts = new CancellationTokenSource();
         }
 
         public void Start(string username)
         {
             Console.WriteLine("Введите сообщение (или 'Exit' для выхода, 'List' для получения непрочитанных сообщений):");
 
-            while (true)
+            while (!cts.Token.IsCancellationRequested)
             {
-                string messageText = Console.ReadLine();
+                string? messageText = Console.ReadLine();
                 if (messageText.ToLower() == "exit")
                 {
                     break;
@@ -39,6 +42,11 @@ namespace Client
 
             udpClient.Close();
             Console.WriteLine("Клиент завершил работу.");
+        }
+
+        public void Stop()
+        {
+            cts.Cancel();
         }
 
         private void SendMessage(string username, string messageText)

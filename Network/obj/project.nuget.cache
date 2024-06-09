@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1fUPmwVKmZM=",
+  "dgSpecHash": "maqmPKu7ChIhb0lX1AoQanbwR+FOUJXR6nXsmeCiyw5CInQxfaMcuCO2DswbCIb2P9piAsOu9vlU13xOlFdpyw==",
   "success": true,
-  "projectFilePath": "C:\\git\\NetworkApp\\ConsoleApp1\\Network.csproj",
+  "projectFilePath": "C:\\git\\NetworkApp\\Network\\Network.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
