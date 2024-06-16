@@ -1,0 +1,12 @@
+C:\Users\atowc\source\repos\Network_App\ChatLibrary\bin\Debug\net6.0\ChatLibrary.deps.json
+C:\Users\atowc\source\repos\Network_App\ChatLibrary\bin\Debug\net6.0\ChatLibrary.dll
+C:\Users\atowc\source\repos\Network_App\ChatLibrary\bin\Debug\net6.0\ChatLibrary.pdb
+C:\Users\atowc\source\repos\Network_App\ChatLibrary\obj\Debug\net6.0\ChatLibrary.csproj.AssemblyReference.cache
+C:\Users\atowc\source\repos\Network_App\ChatLibrary\obj\Debug\net6.0\ChatLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\atowc\source\repos\Network_App\ChatLibrary\obj\Debug\net6.0\ChatLibrary.AssemblyInfoInputs.cache
+C:\Users\atowc\source\repos\Network_App\ChatLibrary\obj\Debug\net6.0\ChatLibrary.AssemblyInfo.cs
+C:\Users\atowc\source\repos\Network_App\ChatLibrary\obj\Debug\net6.0\ChatLibrary.csproj.CoreCompileInputs.cache
+C:\Users\atowc\source\repos\Network_App\ChatLibrary\obj\Debug\net6.0\ChatLibrary.dll
+C:\Users\atowc\source\repos\Network_App\ChatLibrary\obj\Debug\net6.0\refint\ChatLibrary.dll
+C:\Users\atowc\source\repos\Network_App\ChatLibrary\obj\Debug\net6.0\ChatLibrary.pdb
+C:\Users\atowc\source\repos\Network_App\ChatLibrary\obj\Debug\net6.0\ref\ChatLibrary.dll
